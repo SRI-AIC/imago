@@ -139,3 +139,14 @@ Each of the experimental domains (Cartpole, Canniballs, PySC2 Assault) are speci
 ### Formatting Data 
 The Datasets for each domain use the DictTensorDataset class.  Because domains can contain multiple targets, each instance is represented by a dictionary, with observations accessed via the special OBS key and the other values containing the targets.  Please see the load_data() routines for each of the domains for examples of how to muster the data.
 
+
+# License Notice
+The code is provided under the GPLv3 license (see [full license file](LICENSE.md)). To use the code under a different set of licensing terms, please contact [SRI International](https://www.sri.com/)'s licensing department at [licensee-ops@sri.com](mailto:licensee-ops@sri.com).
+
+# Support
+
+If you have questions about using this package or find errors in the code you can post an issue or contact [Eric Yeh](mailto:eric.yeh@sri.com)  or [Melinda Gervasio](mailto:melinda.gervasio@sri.com).
+
+# Acknowledgements
+
+This material is based upon work supported by the Defense Advanced Research Projects Agency (DARPA) under Contract No. HR001119C0112.

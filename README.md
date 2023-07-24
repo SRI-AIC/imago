@@ -1,5 +1,5 @@
 # Imago
-![Overview fo Counterfactual Generation from Jointly-trained Generative Space](OverviewFigure.png)
+![Overview: Counterfactual Generation from Jointly-trained Generative Space](OverviewFigure.png)
 
 Imago is a Python 3 library for developing counterfactuals from a jointly trained generative model.  
 

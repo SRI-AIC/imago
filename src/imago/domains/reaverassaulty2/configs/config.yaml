@@ -1,0 +1,23 @@
+# 'scenes' indexes the episode and frame offset to perform perturbations on
+# Each desired episode is given as a field, with the frame number the value
+scenes:
+        ep0: 1
+        ep10: 5
+
+# Perturbation description, using the variable name
+# and the direction to perturb (-1, 1).
+# NOTE: Name must match one of the columns in the interestingness
+# CSV headers.
+varname: Riskiness
+direction: 1
+
+debug: True
+device: cuda:0
+results_dir: results/ray2perturb
+
+model_fpath: models/ReaverAssaultYear2/model.pt
+
+# Paths to the interaction data, and the corresponding
+# interestingness variables.
+data_path: ../datasets/ReaverAssaultYear2/interaction_data.pkl.gz
+intr_csv_fpath: ../datasets/ReaverAssaultYear2/interestingness.csv.gz

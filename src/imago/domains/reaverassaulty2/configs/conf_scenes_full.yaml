@@ -1,0 +1,36 @@
+# 'scenes' indexes the episode and frame offset to perform perturbations on
+# Each desired episode is given as a field, with the frame number the value
+scenes:
+        ep1810: 195
+        ep1254: 205
+        ep1083: 241
+        ep1757: 250
+        ep1443: 121
+
+
+# Perturbation description, using the variable name
+# and the direction to perturb (-1, 1).
+# NOTE: Name must match one of the columns in the interestingness
+# CSV headers.
+varname: Confidence
+direction: -1
+tgt_mag: 0.5  # Target absolute difference in magnitude to be considered valid
+
+# Limit and valid instance selection policies
+# limit: None
+valid_sel_method: fivepts
+# valid_sel_method: threepts
+
+# Number of nearest neighbors (feature-space) to consider
+neighbors: 5
+
+debug: False
+device: cuda:0
+results_dir: results/ray2_dec_conf_full
+
+model_fpath: models/ReaverAssaultYear2/model.pt
+
+# Paths to the interaction data, and the corresponding
+# interestingness variables.
+data_path: ../datasets/ReaverAssaultYear2/interaction_data.pkl.gz
+intr_csv_fpath: ../datasets/ReaverAssaultYear2/interestingness.csv.gz
